@@ -1,0 +1,29 @@
+{
+    "eslint.autoFixOnSave": true,
+    "eslint.validate": [
+      "javascript",
+      "javascriptreact",
+      "html",
+      {
+        "language": "vue",
+        "autoFix": true
+      }
+    ],
+    "globals":{
+      "document": true,
+      "localStorage": true,
+      "window": true,
+      "Vue": true
+    },
+    "eslint.options": {
+        "plugins": ["html"]
+     },
+    // 每行在这个字符数内整合代码,根据自己屏幕情况设定
+    "prettier.printWidth": 120,
+    // 是否在每行末尾加上分号
+    "prettier.semi": false,
+    // 如果为true，将使用单单引号否则使用双引号
+    "prettier.singleQuote": true,
+    // 对html的内容使用js-beautify-html
+    "vetur.format.defaultFormatter.html": "js-beautify-html"
+  }
